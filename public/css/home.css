@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    background: #000000ed; 
+    min-height: 100vh;
+
+
+
+
+}
+.home{
+    display: flex;
+    align-items: center;
+}
+.imagen{
+    width: 50%;
+}
+.isotipo{
+    width: 90%;
+    /*clip-path: inset(0 30% 0 0);*/
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    opacity: 0.45;
+    max-height: 100%; ;
+}
+
+
+.menu{
+    list-style: none;
+    line-height:42px;
+   /*margin: 4em auto;*/
+    padding-left: 0;
+    width: 15em;
+
+    
+}
+nav{
+    width: 40%;
+}
+
+.menu a{
+    color: #ddd;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    -webkit-transition: all .5s ;
+    -moz-transition: all .5s ;
+    -ms-transition: all .5s ;
+    -o-transition: all .5s ;
+    transition: all .5s ;
+}
+ion-icon{
+ padding-right: 0.5em;
+  
+  font-size: 19px;
+ 
+} 
+.menu a:hover{
+    margin-left: 1em;
+}
+.menu li{
+/*inset hace que la sombra vaya hacia adentro desde la derecha*/
+   box-shadow: 3px 0 rgba(255,255,255,.2) inset;
+    padding-left: 1em;
+    margin-bottom: 5px;
+    /*la transicion al hover*/
+    -webkit-transition: all .5s ;
+    -moz-transition: all .5s ;
+    -ms-transition: all .5s ;
+    -o-transition: all .5s ;
+    transition: all .5s ;
+}
+
+.menu li:hover{
+   box-shadow: 15em 0 rgba(255,255,255,.2) inset;
+
+
+}
+
+/*Haciendo menú responsive*/
+@media screen and (max-width : 600px){
+
+
+nav{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    background: rgba(0,0,0,.6);
+    transition: all .3s;
+    width: 100%;
+}
+.menu{
+    margin-top: 17em;
+    padding-left: 4em;
+}
+
+
+.home{
+    flex-direction: column;
+}
+.imagen{
+    width:100% ;
+}
+.isotipo{
+    width: 100%;
+    clip-path: none;
+
+}
+
+
+
+}

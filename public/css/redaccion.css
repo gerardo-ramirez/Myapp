@@ -1,0 +1,98 @@
+.ContenedorRedaccion{
+    background-image: url("/img/fondoTexto.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+      
+    
+    }
+
+    .sticky{
+        position: sticky;
+        top: 5px;
+        align-self: flex-start;
+        background-color: black;
+        width:250px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+
+    }
+    .imagenSticky{
+        border-radius: 50%;
+        width: 60px;
+        height:60px;
+        margin-left: 3px;
+
+
+    }
+    .textoSticky{
+        color: beige;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        padding-left: 20px;
+        line-height: 5px;
+       
+
+
+    }
+    .textoSticky a{
+        text-decoration:none;
+        color: beige;
+        font-family: 'Raleway', sans-serif;
+        box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+
+       
+    } 
+  
+    .fondoParrafo{
+        width: 50%;
+    
+    
+    
+    
+        background:rgba(24,8,33,.65);
+        padding:20px;
+        margin:20px 0;
+        color:rgb(185, 177, 177);
+        box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+        font-family: 'Raleway', sans-serif;
+    
+    
+    }
+    /*Pie de pagina Footer*/
+.pie { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background: #000000;
+  
+} 
+.pie a{
+    color: antiquewhite;
+        text-decoration: none;
+        font-size: 30;
+    }
+
+/*Haciendo responsive*/
+@media screen and (max-width : 1000px){ 
+.contenedorRedaccion{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.fondoParrafo{
+    width: 100%;
+}
+.sticky{
+    opacity: 0.8;
+}
+
+   }

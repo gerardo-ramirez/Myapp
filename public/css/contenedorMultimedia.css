@@ -1,0 +1,47 @@
+.sticky{
+    position: absolute;
+    
+}
+
+.contenedorMultimedia{
+    margin-top: 6em;
+    background: #000000ed;
+    color: beige;
+    font-family: 'Raleway', sans-serif;
+}
+.iconosMultimedia{
+    display: flex;
+    align-items: center;
+
+}
+.icon{
+ font-size: 62px;
+ margin: 10px;
+}
+.grafica{
+    width: 300px;
+    height: auto;
+}
+section{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 5em;
+}
+/*Haciendo responsive*/
+@media screen and (max-width : 600px){ 
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe{
+        width: 100%;
+    }
+    .sticky{
+        position: absolute;
+        opacity: 0.85;
+        
+    }
+
+}

@@ -1,0 +1,97 @@
+
+.header{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    background: #000000;
+
+
+
+    
+}
+.iconoRadio{
+    padding-right: 30px;
+    font-size: 70px;
+
+}
+audio{
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+}
+.contenedorRadio{
+    display: flex;
+    justify-content: space-around;
+    background: #383737;
+    color: beige;
+    font-family: 'Raleway', sans-serif;
+    
+}
+.imagen{
+    width: 100%;
+    height: auto;
+}
+.izquierda{
+ max-width: 800px;
+ height: auto;
+ width: 50%;
+ display: flex;
+ flex-direction: column-reverse;
+ justify-content: space-around;
+}
+.sticky2{
+    position: inherit;
+    top: 5px;
+    align-self: flex-start;
+    background-color: black;
+    width:250px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+}
+
+.derecha{
+    width: 50%;
+    
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2px;
+}
+/*Haciendo responsive*/
+@media screen and (max-width : 900px){ 
+    .imagen{
+        border-radius: 50%;
+    }
+   .izquierda{
+ flex-direction: column;
+        
+   }
+
+}
+@media screen and (max-width : 600px){
+    .contenedorRadio{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .imagen{
+        display: none;
+    }
+    .izquierda{
+        width:100% ;
+        flex-direction: row;
+    }
+    section{
+        line-height: normal;
+    }
+ }
