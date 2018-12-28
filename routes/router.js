@@ -16,6 +16,9 @@ router.get('/multimedia',(req,res)=>{
 router.get('/radio', (req,res)=>{
     res.render('radio.ejs')
 });
+router.get('/developer',(req,res)=>{
+    res.render('developer.ejs')
+});
 router.get('/contacto',(req,res)=>{
     res.render('contacto.ejs')
 });
