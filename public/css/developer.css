@@ -37,7 +37,7 @@ ion-icon{
 .sticky2{
     position: relative;
     
-    top: 10px;
+    top: 5px;
     align-self: flex-start;
     background-color: black;
     width:250px;

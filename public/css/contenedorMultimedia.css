@@ -1,11 +1,11 @@
 .sticky{
-    position: absolute;
+    margin-top: 0;
     
 }
 
 .contenedorMultimedia{
-    margin-top: 6em;
-    background: #000000ed;
+    /*margin-top: 6em;*/
+   background:  #383737;
     color: beige;
     font-family: 'Raleway', sans-serif;
 }
@@ -39,7 +39,7 @@ section{
         width: 100%;
     }
     .sticky{
-        position: absolute;
+        /*position: absolute;*/
         opacity: 0.85;
         
     }
